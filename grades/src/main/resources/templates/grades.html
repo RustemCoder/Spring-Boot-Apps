@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="table" style="width: 100%; border: solid;">
+        <thead>
+            <th>Student</th>
+            <th>Subject</th>
+            <th>Score</th>
+        </thead>
+        <tbody>
+            <tr th:object = "${grade}">
+                <td th:text = "*{name}">
+                    
+                </td>
+                <td th:text = "*{Subject}">
+                    
+                </td>
+                <td th:text = "*{Score}">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
